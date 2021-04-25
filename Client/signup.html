@@ -1,0 +1,147 @@
+<html>
+<head>
+<style>
+form {border: 8px solid #3a3939;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 25%;
+  height: 50%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+.container button {
+  background-color: #ffffff;
+  border: 1px solid ;
+  border-color: #28bdd1;
+}
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+.heading img {
+  padding: 5px;
+  width: 75px;
+  height: 75px;
+  float: left;
+}
+
+.heading h2 {
+  padding: 25px 10px 10px 10px;
+  font-size: 30px;
+  margin-left: 90px;
+}
+
+.go-to-create {
+
+}
+.go-to-create a {
+  text-decoration: none;
+}
+.twp-video-background {
+    background: #000;
+    position: absolute;
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0;
+    overflow: hidden;
+    box-sizing: border-box; 
+    z-index: -1;
+}
+.twp-video-foreground,
+.twp-video-background video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    box-sizing: border-box;
+    object-fit: cover; 
+    z-index: -1;
+}
+
+.twp-video-foreground{
+    padding-bottom: 56.25%;
+    box-sizing: border-box; 
+    z-index: -1;
+    position: fixed;
+}
+
+.twp-video-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    box-sizing: border-box; 
+    z-index: -1;
+}
+
+</style>
+<script src = 'main.js'></script>
+</head>
+<body>
+<div class="heading">
+  <a href="index.html"><img src="https://icons-for-free.com/iconfiles/png/512/pencil+sheet+writing+icon-1320086462161608213.png"></a>
+  <h2>SIGNUP</h2>
+</div>
+<form>
+  <div class="imgcontainer">
+    <img src="data:image/png;base64,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" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Create Username</b></label>
+    <input id = 'user' type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Create Password</b></label>
+    <input id = 'pas' type="password" placeholder="Enter Password" name="psw" required>
+        
+    <input style="color:#d44d13" onclick='signup()' type = 'button' value = 'Signup'>
+    
+  </div>
+
+  
+</form>
+<div class="twp-video-background">
+  <div class="twp-video-foreground">
+      <video autoplay muted loop id="myVideo">
+        <source src="https://static.videezy.com/system/resources/previews/000/041/618/original/191111_01_Honeycome-white-random.mp4" type="video/mp4">
+      </video>
+  </div>
+  <div class="twp-video-layer"></div>
+</div>
+</body>
+</html>

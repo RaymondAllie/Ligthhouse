@@ -1,0 +1,238 @@
+p {
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  .heading {
+    display: flex;
+    position: relative;
+  }
+  
+  .heading img {
+    margin-top: 25px;
+    padding: 10px 10px 30px 10px;
+    width: 75px;
+    height: 75px;
+    flex-direction: row;
+  }
+  
+  .user-controls {
+      position: absolute;
+      width: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: width 2s ease-out;
+  }
+  
+  .login-button {
+    padding: 0.5rem 1rem;
+    border: 1px solid black;
+    border-radius: 3px;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  .profile p {
+     white-space: nowrap;
+    overflow: hidden;
+    padding: 0;
+    font-size: 1.2rem;
+  }
+  
+  .profile img {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .heading a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .heading h1 {
+    padding: 1rem;
+    font-size: 50px;
+  }
+  
+  .log {
+    margin-right: 10px;
+  }
+  
+  .sub {
+    font-size: 35px;
+    text-align: center;
+    margin: 15px 40px ;
+    font-weight: bold;
+  }
+  
+  .sub2 {
+    font-size: 20px;
+    text-align: left;
+    margin: 15px 30px;
+  }
+  
+  .nc{
+    margin: 60px 260px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    color: black;
+  }
+  
+  .nc a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .nc img {
+    width: 150px;
+    margin-top: 10px;
+    margin-bottom: 25px ;
+  }
+  
+  .nc p {
+    padding-top: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 14px;
+  }
+  
+  .ncb {
+    width: 280px;
+    height: 350px;
+    margin: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-family: Georgia, serif;  
+  }
+  .ncb:hover{
+    background-color:#3a3939;
+    color: #28bdd1;
+    border-color: #28bdd1
+  }
+  .subj {
+    font-size: 24px !important;
+    font-weight: 500;
+    padding: 30px 30px 0px 30px!important;
+  }
+  
+  .chem {
+    font-size: 11px!important;
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+  }
+  
+  .math {
+    padding-bottom:15px!important;
+  }
+  
+  .twp-video-background {
+      background: #000;
+      position: absolute;
+      top: 0; 
+      right: 0; 
+      bottom: 0; 
+      left: 0;
+      overflow: hidden;
+      box-sizing: border-box; 
+      z-index: -1;
+  }
+  .twp-video-foreground,
+  .twp-video-background video{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      box-sizing: border-box;
+      object-fit: cover; 
+      z-index: -1;
+  }
+  
+  .twp-video-foreground{
+      padding-bottom: 56.25%;
+      box-sizing: border-box; 
+      z-index: -1;
+      position: fixed;
+  }
+  
+  .twp-video-layer {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0.5;
+      box-sizing: border-box; 
+      z-index: -1;
+  }
+    
+  
+  
+  
+  .e1 {
+    text-align: left;
+  }
+  
+  .e1_3 { 
+    z-index: 1;
+      position:relative;
+    margin: 1px 0px;
+  }
+  .e1_4 { 
+      color:rgba(68.00000354647636, 68.00000354647636, 68.00000354647636, 1);
+      width:100px;
+      height:18px;
+      position:relative;
+      left:10px;
+      top:20px;
+      font-family:Roboto;
+      text-align:center;
+      font-size: 20px;
+      letter-spacing:0;
+  }
+  
+  .e1_5 { 
+    z-index: 2;
+  
+      background-color:rgba(210.37499696016312, 210.37499696016312, 210.37499696016312, 1);
+      width:300px;
+      height:58px;
+      position:relative;
+    margin: 65px 10px 30px 6px;
+    cursor: pointer;
+  }
+  .e1_6 { 
+    z-index: 1;
+      color:rgba(68.00000354647636, 68.00000354647636, 68.00000354647636, 1);
+      width:76px;
+      height:18px;
+      position:relative;
+      left:10px;
+      top:20px;
+      font-family:Roboto;
+      text-align:center;
+      font-size:15px;
+      letter-spacing:0;
+  }
+  
